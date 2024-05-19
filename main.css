@@ -1,0 +1,95 @@
+/* Define a fonte padrão para o corpo do documento */
+body {
+    font-family: Roboto, sans-serif;
+}
+
+/* Define a cor de fundo da barra de navegação */
+.navbar {
+    background-color: #009246
+}
+
+#cabecalho .navbar-brand {
+    color: #980f18 !important; 
+    font-size: 35px;
+}
+
+/* Define o estilo do link ativo na barra de navegação */
+#cabecalho .nav .nav-link.active {
+    background-color: #fff; /* Cor de fundo branco para o link ativo */
+    color: #980f18; /* Cor do texto do link ativo */
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Faz a imagem preencher o contêiner, cortando se necessário */
+}
+
+
+/* Define o estilo para vários elementos de navegação e marca da barra de navegação */
+#cabecalho .nav .nav-link,
+.navbar-brand,
+.navbar-brand:hover,
+.nav-cardapio .nav-link.active:hover {
+    color: #fff; /* Cor do texto branca */
+}
+
+/* Define a cor de fundo do botão de alternância da barra de navegação em telas pequenas */
+.navbar-toggler {
+    background-color: #ffeae6;
+}
+
+/* Define a fonte e o estilo para os títulos das seções */
+.section-title {
+    font-family: Pacifico, cursive;
+}
+
+/* Define a cor de fundo para as seções 'sobre o restaurante' e 'cardápio' */
+#sobre-o-restaurante, #cardapio {
+    background-color: #d0c0c1
+}
+
+/* Define uma cor específica para elementos com a classe 'text-colored' */
+.text-colored {
+    color: #980f18;
+}
+
+/* Define o estilo para o link ativo no cardápio de navegação e o botão na seção 'fale conosco' */
+.nav-cardapio .nav-link.active,
+#fale-conosco button {
+    background-color: #980f18; /* Cor de fundo vermelho escuro */
+    color: #fff; /* Cor do texto branca */
+}
+
+/* Define o estilo para o link de navegação do cardápio quando em estado de foco ou ativo */
+.nav-cardapio .nav-link:hover {
+    color: #980f18; /* Cor do texto vermelho escuro */
+}
+
+/* Define o estilo para itens de lista de links sociais */
+.social-links li {
+    list-style: none; /* Remove os marcadores da lista */
+    display: inline; /* Exibe os itens de lista em linha */
+}
+
+/* Define o estilo para links sociais */
+.social-links a {
+    text-decoration: none; /* Remove a decoração (sublinhado) dos links */
+}
+
+/* Define estilos específicos para telas com largura máxima de 767px */
+@media (max-width: 767px) {
+    .carousel-item img {
+        height: 280px; /* Altura definida para telas pequenas */
+        width: 100%;
+        object-fit: cover;
+    }
+
+    @media (max-width: 767px) {
+        /* Espaçamento entre a mensagem e a localização em telas menores */
+        #fale-conosco .col-md-7 {
+            margin-bottom: 2rem; /* Espaçamento inferior */
+        }
+    }
+    
+}
